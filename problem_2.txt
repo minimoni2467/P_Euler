@@ -1,0 +1,14 @@
+function fiboEvenSum(n) {
+  let x = 1;
+  let y = 2;
+  let sum = 0;
+  do {
+    if (y % 2 == 0){
+      sum += y;
+    }
+      y += x;
+      x = y - x;
+  } while  (y <= n);
+  console.log(sum);
+  return sum;
+}
